@@ -4,7 +4,7 @@ I wanted to keep this somewhere in case i need to reference it in the future.  I
 The profile you grab can either be sent online, stored on a drive, or uploaded on git - then applied to any terminal you wish!
 
 ## Copy The Original Profile 
-*copy the gnome-terminal profiles from one system*
+*copy the gnome-terminal profiles from original machine*
 
     $ dconf dump /org/gnome/terminal/legacy/profiles:/ > gnome-terminal-profiles.dconf
 
@@ -14,9 +14,11 @@ Store your files in a way it can be accessed in another location. flash-drives o
 
 ## Get Ready
 
-You want to get the file on the new machine. Open the terminal from the location of the saved profile. (this can be done by right clicking and selecting open in terminal if you are not comfortable moving around via the command line.
+You want to get the file on the new machine. Open the terminal from the location of the saved profile. (this can be done by right clicking and selecting open in terminal if you are not comfortable moving around via the command line. Once in position, fire off this next line!
 
 ## Set The New Profile
+*set the gnome-terminal profiles on new machine*
+
     $ dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
 
 ## Enjoy
